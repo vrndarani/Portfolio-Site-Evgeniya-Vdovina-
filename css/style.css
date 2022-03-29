@@ -6,14 +6,16 @@ Primary Color (pink): #ef1762;
 Secondary Color (orange): #f4892D;
 Alternative Secondary color (lime): #d2e637
 
-Main text (dark grey): ##4d4d4d
+Main text (dark grey): #4d4d4d
 Secondary text (grey): #7f7f7f
 Input bars (light grey): #f1f1f1
 Background color (white): #ffffff
 */
 
 
-
+* {
+  box-sizing: border-box;
+}
 body {
 
 
@@ -51,6 +53,17 @@ img {
   width: 100%;
 }
 
+header {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px 0;
+}
+.logo { max-width: 250px;
+}
+
+.social {width: 10%;
+}
+
 a {
   color: #ef1762;
   text-decoration: none; /* No underlining */
@@ -71,7 +84,7 @@ a:active { /* selected link */
 }
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
   background-color: #ef1762;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
@@ -105,4 +118,26 @@ a:active { /* selected link */
 
 .button-contact:active {
 color: #a31043
+}
+
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4d4d4d;
+}
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+
+.center {
+  text-align: center; /*centers all h1 elements of we put h1 class=center.
+   so the method above is better for applying to separate elements*/
 }
