@@ -222,8 +222,7 @@ nav {
   background-color: #f1f1f1;
   padding: 20px 0;
   display: inline-block;
-  width: 100%
-  ;
+  width: 100%;
 }
 
 main {
@@ -252,26 +251,24 @@ main {
   .col-md-6 {
     width: 50%;
   }
+
   [class*="col-"] {
-  float: left;
-  padding: 0 0 10px 10px;
-}
+    float: left;
+    padding: 0 0 10px 10px;
+  }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
-
-
-
-#about h3 { margin-top: 0;}
-
+  #about h3 {
+    margin-top: 0;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
-
   header {
     text-align: unset;
   }
@@ -299,47 +296,50 @@ main {
   }
 
   [class*="col-"] {
-  float: left;
-  padding: 0 0 10px 10px;
+    float: left;
+    padding: 0 0 10px 10px;
   }
 
   .row::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
   }
 
-
-
-
-  #about h3 { margin-top: 0;}
-
+  #about h3 {
+    margin-top: 0;
   }
+}
 
-  .container {
+.container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
-}
-
-@media only screen and (min-width: 1440px) {}
 
 
-
-#work .row{
+#work .row {
   border-bottom: 0;
 }
 
 .berlin-illustration {
-width: 100%;
-max-width: 100%;
-height: auto;}
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -347,8 +347,13 @@ height: auto;}
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(400px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(400px, 50px);
+  }
 }
 
 .cloud-front {
@@ -356,8 +361,13 @@ height: auto;}
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
