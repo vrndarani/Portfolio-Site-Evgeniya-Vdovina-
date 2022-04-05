@@ -1,4 +1,3 @@
-
 /*
 Colors used:
 
@@ -11,25 +10,26 @@ Secondary text (grey): #7f7f7f
 Input bars (light grey): #f1f1f1
 Background color (white): #ffffff
 */
-
-
 * {
   box-sizing: border-box;
 }
+
 body {
-
-
   background-color: #ffffff;
-  font-family: 'Inter', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-family: 'Inconsolata', monospace;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
 
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 30px;
   font-weight: 700;
@@ -44,6 +44,7 @@ h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
@@ -58,55 +59,73 @@ header {
   text-align: center;
   padding: 10px 0;
   -webkit-box-shadow: -10px 3px 5px 0px rgba(94, 9, 38, 0.58);
-  -moz-box-shadow:    -10px 3px 5px 0px rgba(94, 9, 38, 0.58);
-  box-shadow:         -10px 3px 5px 0px rgba(94, 9, 38, 0.58);
+  -moz-box-shadow: -10px 3px 5px 0px rgba(94, 9, 38, 0.58);
+  box-shadow: -10px 3px 5px 0px rgba(94, 9, 38, 0.58);
   position: fixed;
-  width : 100%;
-}
-.logo { max-width: 250px;
+  width: 100%;
 }
 
-.social {width: 100px;
-display: inline-block;}
+.logo {
+  max-width: 250px;
+}
+
+.social {
+  width: 100px;
+  display: inline-block;
+}
 
 a {
   color: #ef1762;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
-ul li {list-style-type: none}
 
-a:visited { /* visited link */
+ul li {
+  list-style-type: none
+}
+
+a:visited {
+  /* visited link */
   color: #ef1762;
 }
+
 a:hover,
 a:focus {
   color: #d2e637;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
 
-a:active { /* selected link */
+a:active {
+  /* selected link */
   color: #a31043;
 }
 
 .button {
   display: inline-block;
   background-color: #ef1762;
-  color: #ffffff; /* needed to override the default link color */
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #994c30;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
-.button:visited {color: #ffffff;
+
+.button:visited {
+  color: #ffffff;
 }
 
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
-.button:active { /* selected button */
+.button:active {
+  /* selected button */
   color: #a31043;
 }
 
@@ -124,80 +143,223 @@ a:active { /* selected link */
 }
 
 .button-contact:active {
-color: #a31043
+  color: #a31043
 }
 
-
 /* Layout styling */
-
 .container {
   padding: 0 15px;
 }
+
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
 
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #4d4d4d;
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4d4d4d;
 }
 
-#hero h1 {
-  text-align: center; /* Centers text */
+#hero h1, p {
+  text-align: center;
+  /* Centers text */
+}
+
+#hero span {
+  display: block;
 }
 
 .center {
-  text-align: center; /*centers all h1 elements of we put h1 class=center.
+  text-align: center;
+  /*centers all h1 elements of we put h1 class=center.
    so the method above is better for applying to separate elements*/
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
 
-
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #ef1762;
 }
 
-nav > ul > li > a:visited {
+nav>ul>li>a:visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #ef1762
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #d2e637
 }
 
-nav > ul > li > a:active {
+nav>ul>li>a:active {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #f4892D
 }
 
-nav {display: inline-block;
+nav {
+  display: inline-block;
   width: 100%;
 }
 
 #hero {
   background-color: #f1f1f1;
-    padding: 20px 0;
-    display: inline-block;
-    width: 100%;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%
+  ;
 }
 
 main {
   padding-top: 183px;
+}
+
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 24px;
+  }
+
+  main {
+    padding-top: 119px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+  [class*="col-"] {
+  float: left;
+  padding: 0 0 10px 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+#about h3 { margin-top: 0;}
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  header {
+    text-align: unset;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 24px;
+  }
+
+  main {
+    padding-top: 119px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  [class*="col-"] {
+  float: left;
+  padding: 0 0 10px 10px;
+  }
+
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+
+
+
+
+  #about h3 { margin-top: 0;}
+
+  }
+
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
+@media only screen and (min-width: 1440px) {}
+
+
+
+#work .row{
+  border-bottom: 0;
+}
+
+.berlin-illustration {
+width: 100%;
+max-width: 100%;
+height: auto;}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(400px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
