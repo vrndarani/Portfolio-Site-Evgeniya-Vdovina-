@@ -238,7 +238,12 @@ main {
 .icon {
   max-width:150px;
 }
-
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle.responsive li  {
+  display: block;
+}
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
@@ -270,7 +275,7 @@ main {
     display: inline-block;
   }
 
-  .navtoggle li:not(:last-child) {
+.navtoggle li:not(:last-child) {
   display: inline-block;
 }
 
@@ -364,6 +369,10 @@ nav > ul {
   #about h3 {
     margin-top: 0;
   }
+  .navtoggle li:last-child {
+  display: none;
+}
+
 }
 
 .container {
@@ -427,8 +436,4 @@ nav > ul {
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
-.navtoggle li:not(:last-child) {
-  display: none;
 }
