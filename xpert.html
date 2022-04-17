@@ -4,38 +4,36 @@
 <head>
   <meta charset="utf-8">
 
-<link href="img/favicon.ico" rel="shortcut icon">
+  <link href="img/favicon.ico" rel="shortcut icon">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&display=swap" rel="stylesheet">
 
   <title>Eva Vdovina UX/UI Designer Muenchen</title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
+ 
 <body>
 
-  <header  id=menu>
+  <header>
     <div class="container">
-      <div>
-
+      <div class="navtoggle" id="myNavtoggle">
         <a href="index.html"><img class="logo" src="img/website/logopuff.png" alt="Logo"></a>
         <nav>
           <ul>
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-
-              </ul>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
         </nav>
       </div>
     </div>
-
-
   </header>
 
 
@@ -43,8 +41,8 @@
     <div>
       <div class="container">
         <h1>Xpert app
-        <br><span>Enjoy your life - we got you with the rest.</span>
-      </h1>
+          <br><span>Enjoy your life - we got you with the rest.</span>
+        </h1>
         <picture>
           <source srcset="img/xpert/projects/cover_x1.jpg" media="(max-width:767px)">
           <img src="img/xpert/projects/cover_x2.jpg" alt="Xpert app">
@@ -60,95 +58,97 @@
 
     <div id=project class="container">
 
-        <h2>My Design Process</h2>
+      <h2>My Design Process</h2>
 
-<div>
+      <div>
         <div>
           <br>
           <br>
-            <picture>
-              <source srcset="img/xpert/projects/research_x1.jpg" media="(max-width:767px)">
-              <img src="img/xpert/projects/research_x2.jpg" alt="Xpert app">
-            </picture>
-        <h3>Research</h3>
-        <p>We wanted to solve the problem of people having immediate access
-          to verified experts in various fields by building an app where users
-           can quickly find, call and text experts in the required field.
-           After realizing the scope of the app, we moved on to competitive analysis that highlighted
+          <picture>
+            <source srcset="img/xpert/projects/research_x1.jpg" media="(max-width:767px)">
+            <img src="img/xpert/projects/research_x2.jpg" alt="Xpert app">
+          </picture>
+          <h3>Research</h3>
+          <p>We wanted to solve the problem of people having immediate access
+            to verified experts in various fields by building an app where users
+            can quickly find, call and text experts in the required field.
+            After realizing the scope of the app, we moved on to competitive analysis that highlighted
             some market opportunities for us. As the users of expert apps tend
-             to be younger ones, they can be reached by larger efforts in marketing,
-             especially SMM on Instagram and TikTok. Another thing we discovered
-             is there is no app that provides both top verified experts and
-              immediate access to them. With that in mind, we deciced to
-              introduce online/offline presence and rating system that also
-               includes experts’ availability. We conducted potential user
-               interviews and collected their needs and goals that proved
-               our problem statement to be correct. </p>
-               <br>
-               <br>
-             </div>
+            to be younger ones, they can be reached by larger efforts in marketing,
+            especially SMM on Instagram and TikTok. Another thing we discovered
+            is there is no app that provides both top verified experts and
+            immediate access to them. With that in mind, we deciced to
+            introduce online/offline presence and rating system that also
+            includes experts’ availability. We conducted potential user
+            interviews and collected their needs and goals that proved
+            our problem statement to be correct. </p>
+          <br>
+          <br>
+        </div>
 
-<div>
-  <br>
-  <br>
-    <picture>
-      <source srcset="img/xpert/projects/ideation_x1.jpg" media="(max-width:767px)">
-      <img src="img/xpert/projects/ideation_x2.jpg" alt="Xpert app">
-    </picture>
-<h3>Ideation</h3>
-<p>We created a user persona to give a face to our users’ needs and goals,
-  analyses their task flow and designed their user flow. This helped us see what
-   must be included in the app and eventually build a sitemap with the right hierarchy. </p>
-   <br>
-   <br></div>
+        <div>
+          <br>
+          <br>
+          <picture>
+            <source srcset="img/xpert/projects/ideation_x1.jpg" media="(max-width:767px)">
+            <img src="img/xpert/projects/ideation_x2.jpg" alt="Xpert app">
+          </picture>
+          <h3>Ideation</h3>
+          <p>We created a user persona to give a face to our users’ needs and goals,
+            analyses their task flow and designed their user flow. This helped us see what
+            must be included in the app and eventually build a sitemap with the right hierarchy. </p>
+          <br>
+          <br>
+        </div>
 
-   <div>
-     <br>
-     <br>
-       <picture>
-         <source srcset="img/xpert/projects/wireframe_x1.jpg" media="(max-width:767px)">
-         <img src="img/xpert/projects/wireframe_x2.jpg" alt="Xpert app">
-       </picture>
-   <h3>Wireframe</h3>
-   <p>These low-fidelity  wireframes are meant to organize the information on
-     each screen of the app for further design process: mid- and high- levels of
-      fidelity and prototyping. </p>
-      <br>
-      <br></div>
+        <div>
+          <br>
+          <br>
+          <picture>
+            <source srcset="img/xpert/projects/wireframe_x1.jpg" media="(max-width:767px)">
+            <img src="img/xpert/projects/wireframe_x2.jpg" alt="Xpert app">
+          </picture>
+          <h3>Wireframe</h3>
+          <p>These low-fidelity wireframes are meant to organize the information on
+            each screen of the app for further design process: mid- and high- levels of
+            fidelity and prototyping. </p>
+          <br>
+          <br>
+        </div>
 
 
-      <div>
-        <br>
-        <br>
+        <div>
+          <br>
+          <br>
           <picture>
             <source srcset="img/xpert/projects/design_x1.jpg" media="(max-width:767px)">
             <img src="img/xpert/projects/design_x2.jpg" alt="Xpert app">
           </picture>
-      <h3>Design</h3>
-      <p>With several rounds of iterations based on user testing and peers’
-        feedback, we created this high-fidelity wireframes that are to be used
-         in prototyping. In the process we focused on providing all the necessary information and avoiding clutter. We added online status to experts, changed buttons locations, using the feedback from user testing and our observations. </p>
-         <br>
-         <br>
-       </div>
+          <h3>Design</h3>
+          <p>With several rounds of iterations based on user testing and peers’
+            feedback, we created this high-fidelity wireframes that are to be used
+            in prototyping. In the process we focused on providing all the necessary information and avoiding clutter. We added online status to experts, changed buttons locations, using the feedback from user testing and our observations. </p>
+          <br>
+          <br>
+        </div>
 
-       <div>
-         <br>
-         <br>
-           <picture>
-             <source srcset="img/xpert/projects/prototype_x1.jpg" media="(max-width:767px)">
-             <img src="img/xpert/projects/prototype_x2.jpg" alt="Xpert app">
-           </picture>
-       <h3>Prototyping</h3>
-       <p>After 3 rounds of user testing, 2 rounds of A/B testing, we made
-         iterations and finalized the prototype (although no project can be
-         final and there is room for improvement here as well). We worked on
-         final frictions and tried to improve accessibility with color choices
-         and grouping.
-       <br>
-       The prototype we created can be found
-       <a href="https://xd.adobe.com/view/331a4918-c7ad-4809-8bf2-c7fee2b58692-6649/" target="_blank">here</a>
-     </p>
+        <div>
+          <br>
+          <br>
+          <picture>
+            <source srcset="img/xpert/projects/prototype_x1.jpg" media="(max-width:767px)">
+            <img src="img/xpert/projects/prototype_x2.jpg" alt="Xpert app">
+          </picture>
+          <h3>Prototyping</h3>
+          <p>After 3 rounds of user testing, 2 rounds of A/B testing, we made
+            iterations and finalized the prototype (although no project can be
+            final and there is room for improvement here as well). We worked on
+            final frictions and tried to improve accessibility with color choices
+            and grouping.
+            <br>
+            The prototype we created can be found
+            <a href="https://xd.adobe.com/view/331a4918-c7ad-4809-8bf2-c7fee2b58692-6649/" target="_blank">here</a>
+          </p>
           <br>
           <br>
         </div>
@@ -156,16 +156,16 @@
         <div>
 
           <h2>Conclusion</h2>
-        <p>The fascinating discoveries we made at research stage - of how people
-           act and what they need when looking for help - allowed us to create
-           an app that smoothly and easily brings the user to their goal: to
-           quickly find the right expert, connect with them right away -
-           through calls or messages.
+          <p>The fascinating discoveries we made at research stage - of how people
+            act and what they need when looking for help - allowed us to create
+            an app that smoothly and easily brings the user to their goal: to
+            quickly find the right expert, connect with them right away -
+            through calls or messages.
 
-        </p>
-           <br>
-           <br>
-         </div>
+          </p>
+          <br>
+          <br>
+        </div>
 
 
       </div>
@@ -193,7 +193,7 @@
           </li>
 
           <li><img display=inline-block src="img/website/twitter.svg" alt="Twitter">
-              </li>
+          </li>
 
           <li><img display=inline-block src="img/website/insta.svg" alt="Instagram">
           </li>
@@ -206,7 +206,9 @@
 
   </footer>
 
-
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
